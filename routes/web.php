@@ -21,4 +21,11 @@ Route::get('grava', 'CadastroController@grava');
 
 Route::post('grava', 'CadastroController@grava');
 
-Route::get('lista', 'CadastroController@lista');
+Route::get('lista', 'CadastroController@lista2');
+
+Route::resource('produtos', 'ProdutoController');
+
+Route::get('mercado', function () {
+    return view('mercado');
+});
+
